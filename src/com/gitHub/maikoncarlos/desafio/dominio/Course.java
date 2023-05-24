@@ -3,7 +3,7 @@ package com.gitHub.maikoncarlos.desafio.dominio;
 public class Course extends Content {
     private int duration;
     @Override
-    public double calcularXp() {
+    public double calculateXp() {
         return XP_STANDARD * duration;
     }
     public int getDuration() {

@@ -5,7 +5,7 @@ public abstract class Content {
     private String title;
     private String description;
 
-    public abstract double calcularXp();
+    public abstract double calculateXp();
 
     public String getTitle() {
         return title;

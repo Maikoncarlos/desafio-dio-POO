@@ -6,7 +6,7 @@ public class Mentoring extends Content {
     private LocalDate date;
 
     @Override
-    public double calcularXp() {
+    public double calculateXp() {
         return XP_STANDARD + 20d;
     }
 
