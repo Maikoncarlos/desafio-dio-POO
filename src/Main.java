@@ -1,3 +1,4 @@
+import com.gitHub.maikoncarlos.desafio.dominio.Content;
 import com.gitHub.maikoncarlos.desafio.dominio.Course;
 import com.gitHub.maikoncarlos.desafio.dominio.Mentoring;
 

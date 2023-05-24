@@ -2,42 +2,29 @@ package com.gitHub.maikoncarlos.desafio.dominio;
 
 import java.time.LocalDate;
 
-public class Mentoring {
+public class Mentoring extends Content {
+    private LocalDate date;
 
-    private String title;
-    private String description;
-    private LocalDate now_date;
+    @Override
+    public double calcularXp() {
+        return XP_STANDARD + 20d;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setNow_date(LocalDate date) {
+        this.date = date;
+    }
 
     @Override
     public String toString() {
         return "Mentoring{" +
-                "title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", now_date=" + now_date +
+                "title='" + getTitle() + '\'' +
+                ", description='" + getDescription() + '\'' +
+                ", now_date=" + date +
                 '}';
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public LocalDate getNow_date() {
-        return now_date;
-    }
-
-    public void setNow_date(LocalDate now_date) {
-        this.now_date = now_date;
-    }
 }
